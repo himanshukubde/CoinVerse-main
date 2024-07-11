@@ -143,47 +143,137 @@ const Dashboard = () => {
 								</div>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-xl-6">
-								<div class="card crypto-chart">
-									<div class="card-header pb-0 border-0 flex-wrap">
-										<div class="mb-0">
-											<h4 class="card-title">Crypto Statistics</h4>
+						<div className="row">
+							<div className="col-xl-6">
+								<div className="card crypto-chart">
+									<div className="card-header pb-0 border-0 flex-wrap">
+										<div className="mb-0">
+											<h4 className="card-title">Crypto Statistics</h4>
 											<p>Lorem ipsum dolor sit amet, consectetur</p>
 										</div>
-										<div class="d-flex mb-2">
-											<div class="form-check form-switch toggle-switch me-3">
-												<label class="form-check-label" for="flexSwitchCheckChecked1">Date</label>
-												<input class="form-check-input custome" type="checkbox" id="flexSwitchCheckChecked1" checked="" />
+										<div className="d-flex mb-2">
+											<div className="form-check form-switch toggle-switch me-3">
+												<label
+													className="form-check-label"
+													htmlFor="flexSwitchCheckChecked1"
+												>
+													Date
+												</label>
+												<input
+													className="form-check-input custome"
+													type="checkbox"
+													id="flexSwitchCheckChecked1"
+													defaultChecked=""
+												/>
 											</div>
-											<div class="form-check form-switch toggle-switch">
-												<label class="form-check-label" for="flexSwitchCheckChecked2">Value</label>
-												<input class="form-check-input custome" type="checkbox" id="flexSwitchCheckChecked2" checked="" />
+											<div className="form-check form-switch toggle-switch">
+												<label
+													className="form-check-label"
+													htmlFor="flexSwitchCheckChecked2"
+												>
+													Value
+												</label>
+												<input
+													className="form-check-input custome"
+													type="checkbox"
+													id="flexSwitchCheckChecked2"
+													defaultChecked=""
+												/>
 											</div>
 										</div>
 									</div>
-									<div class="card-body pt-2">
-										<ul class="nav nav-pills" role="tablist">
-											<li class=" nav-item" role="presentation">
-												<a href="#navpills-1" class="nav-link active" data-bs-toggle="tab" aria-expanded="false" aria-selected="true" role="tab">Ripple</a>
+									<div className="card-body pt-2">
+										<ul className="nav nav-pills" role="tablist">
+											<li className=" nav-item" role="presentation">
+												<a
+													href="#navpills-1"
+													className="nav-link active"
+													data-bs-toggle="tab"
+													aria-expanded="false"
+													aria-selected="true"
+													role="tab"
+												>
+													Ripple
+												</a>
 											</li>
-											<li class="nav-item" role="presentation">
-												<a href="#navpills-2" class="nav-link " data-bs-toggle="tab" aria-expanded="false" aria-selected="false" tabindex="-1" role="tab">Bitcoin</a>
+											<li className="nav-item" role="presentation">
+												<a
+													href="#navpills-2"
+													className="nav-link "
+													data-bs-toggle="tab"
+													aria-expanded="false"
+													aria-selected="false"
+													tabIndex={-1}
+													role="tab"
+												>
+													Bitcoin
+												</a>
 											</li>
-											<li class="nav-item" role="presentation">
-												<a href="#navpills-3" class="nav-link" data-bs-toggle="tab" aria-expanded="true" aria-selected="false" tabindex="-1" role="tab">Ethereum</a>
+											<li className="nav-item" role="presentation">
+												<a
+													href="#navpills-3"
+													className="nav-link"
+													data-bs-toggle="tab"
+													aria-expanded="true"
+													aria-selected="false"
+													tabIndex={-1}
+													role="tab"
+												>
+													Ethereum
+												</a>
 											</li>
-											<li class="nav-item" role="presentation">
-												<a href="#navpills-5" class="nav-link" data-bs-toggle="tab" aria-expanded="true" aria-selected="false" tabindex="-1" role="tab">Zcash</a>
+											<li className="nav-item" role="presentation">
+												<a
+													href="#navpills-5"
+													className="nav-link"
+													data-bs-toggle="tab"
+													aria-expanded="true"
+													aria-selected="false"
+													tabIndex={-1}
+													role="tab"
+												>
+													Zcash
+												</a>
 											</li>
-											<li class="nav-item" role="presentation">
-												<a href="#navpills-5" class="nav-link" data-bs-toggle="tab" aria-expanded="true" aria-selected="false" tabindex="-1" role="tab">LiteCoin</a>
+											<li className="nav-item" role="presentation">
+												<a
+													href="#navpills-5"
+													className="nav-link"
+													data-bs-toggle="tab"
+													aria-expanded="true"
+													aria-selected="false"
+													tabIndex={-1}
+													role="tab"
+												>
+													LiteCoin
+												</a>
 											</li>
 										</ul>
-
+									
 									</div>
 								</div>
 							</div>
+							<div className="col-xl-6">
+								<div className="card market-chart">
+									<div className="card-header border-0 pb-0 flex-wrap">
+										<div className="mb-0">
+											<h4 className="card-title">Market Overview</h4>
+											<p>Lorem ipsum dolor sit amet, consectetur</p>
+										</div>
+										<a
+											href="javascript:void(0);"
+											className="btn-link text-primary get-report mb-2"
+										>
+											
+											Get Report
+										</a>
+									</div>
+								
+								</div>
+							</div>
+						</div>
+
+							
 							<div class="col-lg-12">
 								<div class="card transaction-table">
 									<div class="card-header border-0 flex-wrap pb-0">
@@ -442,7 +532,7 @@ const Dashboard = () => {
 				</div>
 			</div>
 
-		</div>
+	
 
 	);
 }

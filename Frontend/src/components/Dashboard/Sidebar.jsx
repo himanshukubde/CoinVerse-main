@@ -4,7 +4,7 @@ const Sidebar = () => {
     return (
         <div>
             <div className="dlabnav follow-info">
-                
+
                 <span className="main-menu">Main Menu</span>
                 <div className="menu-scroll">
                     <div className="dlabnav-scroll mm-active">
@@ -27,28 +27,6 @@ const Sidebar = () => {
                                     aria-expanded="false"
                                 >
                                     <i className="material-symbols-outlined">monitoring</i>
-                                    <span className="nav-text">Trading</span>
-                                </a>
-
-                            </li>
-                            <li>
-                                <a
-
-                                    href="javascript:void(0);"
-                                    aria-expanded="false"
-                                >
-                                    <i className="material-symbols-outlined">monetization_on</i>
-                                    <span className="nav-text">Crypto</span>
-                                </a>
-
-                            </li>
-                            <li>
-                                <a
-
-                                    href="javascript:void(0);"
-                                    aria-expanded="false"
-                                >
-                                    <i className="material-symbols-outlined">lab_profile</i>
                                     <span className="nav-text">Reports</span>
                                 </a>
 
@@ -59,80 +37,8 @@ const Sidebar = () => {
                                     href="javascript:void(0);"
                                     aria-expanded="false"
                                 >
-                                    <i className="material-symbols-outlined">apps_outage</i>
-                                    <span className="nav-text">Apps</span>
-                                </a>
-
-                            </li>
-                            <li>
-                                <a
-                                    className="ai-icon"
-                                    href="javascript:void(0);"
-                                    aria-expanded="false"
-                                >
-                                    <i className="fa-regular fa-gear fw-bold" />
-                                    <span className="nav-text">CMS</span>
-                                </a>
-
-                            </li>
-                            <li>
-                                <a
-
-                                    href="javascript:void(0);"
-                                    aria-expanded="false"
-                                >
-                                    <i className="material-symbols-outlined">donut_large</i>
-                                    <span className="nav-text">Charts</span>
-                                </a>
-
-                            </li>
-                            <li>
-                                <a
-
-                                    href="javascript:void(0);"
-                                    aria-expanded="false"
-                                >
-                                    <i className="material-symbols-outlined">favorite</i>
-                                    <span className="nav-text">Bootstrap</span>
-                                </a>
-
-                            </li>
-                            <li>
-                                <a
-
-                                    href="javascript:void(0);"
-                                    aria-expanded="false"
-                                >
-                                    <i className="material-symbols-outlined">scatter_plot</i>
-                                    <span className="nav-text">Plugins</span>
-                                </a>
-
-                            </li>
-                            <li>
-                                <a href="widget-basic.html" className="" aria-expanded="false">
-                                    <i className="material-symbols-outlined">widgets</i>
-                                    <span className="nav-text">Widget</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a
-
-                                    href="javascript:void(0);"
-                                    aria-expanded="false"
-                                >
-                                    <i className="material-symbols-outlined">request_quote</i>
-                                    <span className="nav-text">Forms</span>
-                                </a>
-
-                            </li>
-                            <li>
-                                <a
-
-                                    href="javascript:void(0);"
-                                    aria-expanded="false"
-                                >
-                                    <i className="material-symbols-outlined">table_chart</i>
-                                    <span className="nav-text">Table</span>
+                                    <i className="material-symbols-outlined">monetization_on</i>
+                                    <span className="nav-text">Client</span>
                                 </a>
 
                             </li>
@@ -143,10 +49,59 @@ const Sidebar = () => {
                                     aria-expanded="false"
                                 >
                                     <i className="material-symbols-outlined">lab_profile</i>
-                                    <span className="nav-text">Pages</span>
+                                    <span className="nav-text">Trade History</span>
                                 </a>
 
                             </li>
+                            <li>
+                                <a
+
+                                    href="javascript:void(0);"
+                                    aria-expanded="false"
+                                >
+                                    <i className="material-symbols-outlined">apps_outage</i>
+                                    <span className="nav-text"> Available Positions</span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a
+                                    className="ai-icon"
+                                    href="javascript:void(0);"
+                                    aria-expanded="false"
+                                >
+                                    <i className="fa-regular fa-gear fw-bold" />
+                                    <span className="nav-text"> Withdrawal History</span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a
+
+                                    href="javascript:void(0);"
+                                    aria-expanded="false"
+                                >
+                                    <i className="material-symbols-outlined">donut_large</i>
+                                    <span className="nav-text"> Deposit History</span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a
+
+                                    href="javascript:void(0);"
+                                    aria-expanded="false"
+                                >
+                                    <i className="material-symbols-outlined">favorite</i>
+                                    <span className="nav-text"> SignIn Request</span>
+                                </a>
+
+                            </li>
+                          
+                           
+                           
+                         
+                           
                         </ul>
 
 
