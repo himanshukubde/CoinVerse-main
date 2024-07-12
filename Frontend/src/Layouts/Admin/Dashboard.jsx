@@ -1,4 +1,10 @@
 import React from 'react';
+import 'swiper/swiper-bundle.min.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+
+// Install modules
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 const Dashboard = () => {
 	return (
@@ -9,460 +15,51 @@ const Dashboard = () => {
 					<div className="row">
 						<div className="col-md-12">
 							<div className="row main-card">
-								<div className="swiper swiper-initialized swiper-horizontal mySwiper-counter position-relative overflow-hidden swiper-backface-hidden">
-									<div className="swiper-wrapper">
-										<div
-											className="swiper-slide swiper-slide-active"
-											style={{ width: "240.75px", marginRight: 30 }}
-										>
-											<div className="card card-box bg-secondary bg-secondary">
-												<div className="card-header border-0 pb-0">
-													<div className="chart-num">
-														<p>
-															<i className="fa-solid fa-sort-down me-2" />
-															4%(30 days)
-														</p>
-														<h2 className="font-w600 mb-0">$65,123</h2>
-													</div>
-													<div className="dlab-swiper-circle">
-
-													</div>
-												</div>
-												<div className="card-body p-0">
-													<div id="widgetChart1" className="chart-primary">
-														<div
-															options="[object Object]"
-															series="[object Object]"
-															type="line"
-															height={70}
-															width={500}
-															style={{ minHeight: 70 }}
-														>
-															<div
-																id="apexchartsxj0bfwy9"
-																className="apexcharts-canvas apexchartsxj0bfwy9 apexcharts-theme-light"
-																style={{ width: 500, height: 70 }}
-															>
-																{/* <svg
-																	id="SvgjsSvg1903"
-																	width={500}
-																	height={70}
-																	xmlns="http://www.w3.org/2000/svg"
-																	version="1.1"
-																	xmlnsXlink="http://www.w3.org/1999/xlink"
-																	xmlns:svgjs="http://svgjs.dev"
-																	
-																
-																	transform="translate(0, 0)"
-																	style={{ background: "transparent" }}
-																>
-																	<foreignObject x={0} y={0} width={500} height={70}>
-																		<div
-																				className="apexcharts-legend"
-																			xmlns="http://www.w3.org/1999/xhtml"
-																			style={{ maxHeight: 35 }}
-																		/>
-																	</foreignObject>
-																	<g
-																		id="SvgjsG1936"
-																		className="apexcharts-yaxis"
-																		rel={0}
-																		transform="translate(-18, 0)"
-																	/>
-																	<g
-																		id="SvgjsG1905"
-																		className="apexcharts-inner apexcharts-graphical"
-																		transform="translate(-1, 3)"
-																	>
-																		<defs id="SvgjsDefs1904">
-																			<clipPath id="gridRectMaskxj0bfwy9">
-																				<rect
-																					id="SvgjsRect1907"
-																					width={511}
-																					height={74}
-																					x={-5}
-																					y={-5}
-																					rx={0}
-																					ry={0}
-																					opacity={1}
-																					strokeWidth={0}
-																					stroke="none"
-																					strokeDasharray={0}
-																					fill="#fff"
-																				/>
-																			</clipPath>
-																			<clipPath id="forecastMaskxj0bfwy9" />
-																			<clipPath id="nonForecastMaskxj0bfwy9" />
-																			<clipPath id="gridRectMarkerMaskxj0bfwy9">
-																				<rect
-																					id="SvgjsRect1908"
-																					width={505}
-																					height={68}
-																					x={-2}
-																					y={-2}
-																					rx={0}
-																					ry={0}
-																					opacity={1}
-																					strokeWidth={0}
-																					stroke="none"
-																					strokeDasharray={0}
-																					fill="#fff"
-																				/>
-																			</clipPath>
-																		</defs>
-																		<g id="SvgjsG1914" className="apexcharts-grid">
-																			<g
-																				id="SvgjsG1915"
-																				className="apexcharts-gridlines-horizontal"
-																				style={{ display: "none" }}
-																			>
-																				<line
-																					id="SvgjsLine1918"
-																					x1={0}
-																					y1={0}
-																					x2={501}
-																					y2={0}
-																					stroke="#eeeeee"
-																					strokeDasharray={0}
-																					strokeLinecap="butt"
-																					className="apexcharts-gridline"
-																				/>
-																				<line
-																					id="SvgjsLine1919"
-																					x1={0}
-																					y1={64}
-																					x2={501}
-																					y2={64}
-																					stroke="#eeeeee"
-																					strokeDasharray={0}
-																					strokeLinecap="butt"
-																					className="apexcharts-gridline"
-																				/>
-																			</g>
-																			<g
-																				id="SvgjsG1916"
-																				className="apexcharts-gridlines-vertical"
-																				style={{ display: "none" }}
-																			/>
-																			<line
-																				id="SvgjsLine1921"
-																				x1={0}
-																				y1={64}
-																				x2={501}
-																				y2={64}
-																				stroke="transparent"
-																				strokeDasharray={0}
-																				strokeLinecap="butt"
-																			/>
-																			<line
-																				id="SvgjsLine1920"
-																				x1={0}
-																				y1={1}
-																				x2={0}
-																				y2={64}
-																				stroke="transparent"
-																				strokeDasharray={0}
-																				strokeLinecap="butt"
-																			/>
-																		</g>
-																		<g
-																			id="SvgjsG1917"
-																			className="apexcharts-grid-borders"
-																			style={{ display: "none" }}
-																		/>
-																		<g
-																			id="SvgjsG1909"
-																			className="apexcharts-line-series apexcharts-plot-series"
-																		>
-																			<g
-																				id="SvgjsG1910"
-																				className="apexcharts-series"
-																		
-																				
-																			
-																				rel={1}
-																				data:realindex={0}
-																			>
-																				<path
-																					id="SvgjsPath1913"
-																					d="M 0 36.57142857142857C 19.483333333333334 36.57142857142857 36.18333333333334 16.457142857142856 55.66666666666667 16.457142857142856C 75.15 16.457142857142856 91.85000000000001 64 111.33333333333334 64C 130.81666666666666 64 147.51666666666668 27.428571428571423 167 27.428571428571423C 186.48333333333335 27.428571428571423 203.18333333333334 64 222.66666666666669 64C 242.15000000000003 64 258.85 18.285714285714285 278.33333333333337 18.285714285714285C 297.8166666666667 18.285714285714285 314.51666666666665 54.857142857142854 334 54.857142857142854C 353.48333333333335 54.857142857142854 370.18333333333334 36.57142857142857 389.6666666666667 36.57142857142857C 409.15000000000003 36.57142857142857 425.85 54.857142857142854 445.33333333333337 54.857142857142854C 464.8166666666667 54.857142857142854 481.51666666666665 0 501 0M 501 0"
-																					fill="none"
-																					fillOpacity={1}
-																					stroke="rgba(163, 199, 241, 1) "
-																					strokeOpacity={1}
-																					strokeLinecap="butt"
-																					strokeWidth={6}
-																					strokeDasharray={0}
-																					className="apexcharts-line"
-																					index={0}
-																					clipPath="url(#gridRectMaskxj0bfwy9)"
-																					pathto="M 0 36.57142857142857C 19.483333333333334 36.57142857142857 36.18333333333334 16.457142857142856 55.66666666666667 16.457142857142856C 75.15 16.457142857142856 91.85000000000001 64 111.33333333333334 64C 130.81666666666666 64 147.51666666666668 27.428571428571423 167 27.428571428571423C 186.48333333333335 27.428571428571423 203.18333333333334 64 222.66666666666669 64C 242.15000000000003 64 258.85 18.285714285714285 278.33333333333337 18.285714285714285C 297.8166666666667 18.285714285714285 314.51666666666665 54.857142857142854 334 54.857142857142854C 353.48333333333335 54.857142857142854 370.18333333333334 36.57142857142857 389.6666666666667 36.57142857142857C 409.15000000000003 36.57142857142857 425.85 54.857142857142854 445.33333333333337 54.857142857142854C 464.8166666666667 54.857142857142854 481.51666666666665 0 501 0M 501 0"
-																					pathfrom="M -1 73.14285714285714 L -1 73.14285714285714 L 55.66666666666667 73.14285714285714 L 111.33333333333334 73.14285714285714 L 167 73.14285714285714 L 222.66666666666669 73.14285714285714 L 278.33333333333337 73.14285714285714 L 334 73.14285714285714 L 389.6666666666667 73.14285714285714 L 445.33333333333337 73.14285714285714 L 501 73.14285714285714"
-																					fillRule="evenodd"
-																				/>
-																				<g
-																					id="SvgjsG1911"
-																					className="apexcharts-series-markers-wrap apexcharts-hidden-element-shown"
-																					data:realindex={0}
-																				/>
-																			</g>
-																			<g
-																				id="SvgjsG1912"
-																				className="apexcharts-datalabels"
-																				data:realindex={0}
-																			/>
-																		</g>
-																		<line
-																			id="SvgjsLine1922"
-																			x1={0}
-																			y1={0}
-																			x2={501}
-																			y2={0}
-																			stroke="#b6b6b6"
-																			strokeDasharray={0}
-																			strokeWidth={1}
-																			strokeLinecap="butt"
-																			className="apexcharts-ycrosshairs"
-																		/>
-																		<line
-																			id="SvgjsLine1923"
-																			x1={0}
-																			y1={0}
-																			x2={501}
-																			y2={0}
-																			strokeDasharray={0}
-																			strokeWidth={0}
-																			strokeLinecap="butt"
-																			className="apexcharts-ycrosshairs-hidden"
-																		/>
-																		<g
-																			id="SvgjsG1924"
-																			className="apexcharts-xaxis"
-																			transform="translate(0, 0)"
-																		>
-																			<g
-																				id="SvgjsG1925"
-																				className="apexcharts-xaxis-texts-g"
-																				transform="translate(0, -4)"
-																			/>
-																		</g>
-																		<g
-																			id="SvgjsG1937"
-																			className="apexcharts-yaxis-annotations"
-																		/>
-																		<g
-																			id="SvgjsG1938"
-																			className="apexcharts-xaxis-annotations"
-																		/>
-																		<g
-																			id="SvgjsG1939"
-																			className="apexcharts-point-annotations"
-																		/>
-																	</g>
-																</svg> */}
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
+						<Swiper
+							spaceBetween={30}
+							slidesPerView={1}
+							navigation
+							pagination={{ clickable: true }}
+							scrollbar={{ draggable: true }}
+						>
+							<SwiperSlide>
+								<div className="card card-box bg-secondary bg-secondary">
+									<div className="card-header border-0 pb-0">
+										<div className="chart-num">
+											<p>
+												<i className="fa-solid fa-sort-down me-2" />
+												4%(30 days)
+											</p>
+											<h2 className="font-w600 mb-0">$65,123</h2>
 										</div>
-										<div
-											className="swiper-slide swiper-slide-next"
-											style={{ width: "240.75px", marginRight: 30 }}
-										>
-											<div className="card card-box bg-secondary bg-pink">
-												<div className="card-header border-0 pb-0">
-													<div className="chart-num">
-														<p>
-															<i className="fa-solid fa-sort-down me-2" />
-															4%(30 days)
-														</p>
-														<h2 className="font-w600 mb-0">$68,123</h2>
-													</div>
-													<div className="dlab-swiper-circle">
-
-													</div>
-												</div>
-												<div className="card-body p-0">
-													<div id="widgetChart1" className="chart-primary">
-														<div
-															options="[object Object]"
-															series="[object Object]"
-															type="line"
-															height={70}
-															width={500}
-															style={{ minHeight: 70 }}
-														>
-															<div
-																id="apexcharts30m8sxph"
-																className="apexcharts-canvas apexcharts30m8sxph apexcharts-theme-light"
-																style={{ width: 500, height: 70 }}
-															>
-
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div
-											className="swiper-slide"
-											style={{ width: "240.75px", marginRight: 30 }}
-										>
-											<div className="card card-box bg-secondary bg-dark">
-												<div className="card-header border-0 pb-0">
-													<div className="chart-num">
-														<p>
-															<i className="fa-solid fa-sort-down me-2" />
-															4%(30 days)
-														</p>
-														<h2 className="font-w600 mb-0">$66,123</h2>
-													</div>
-													<div className="dlab-swiper-circle">
-
-													</div>
-												</div>
-												<div className="card-body p-0">
-													<div id="widgetChart1" className="chart-primary">
-														<div
-															options="[object Object]"
-															series="[object Object]"
-															type="line"
-															height={70}
-															width={500}
-															style={{ minHeight: 70 }}
-														>
-															<div
-																id="apexchartsa8p9rnb1"
-																className="apexcharts-canvas apexchartsa8p9rnb1 apexcharts-theme-light"
-																style={{ width: 500, height: 70 }}
-															>
-
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div
-											className="swiper-slide"
-											style={{ width: "240.75px", marginRight: 30 }}
-										>
-											<div className="card card-box bg-secondary bg-warning">
-												<div className="card-header border-0 pb-0">
-													<div className="chart-num">
-														<p>
-															<i className="fa-solid fa-sort-down me-2" />
-															4%(30 days)
-														</p>
-														<h2 className="font-w600 mb-0">$67,123</h2>
-													</div>
-													<div className="dlab-swiper-circle">
-
-													</div>
-												</div>
-												<div className="card-body p-0">
-													<div id="widgetChart1" className="chart-primary">
-														<div
-															options="[object Object]"
-															series="[object Object]"
-															type="line"
-															height={70}
-															width={500}
-															style={{ minHeight: 70 }}
-														>
-															<div
-																id="apexchartsei8n3kpv"
-																className="apexcharts-canvas apexchartsei8n3kpv apexcharts-theme-light"
-																style={{ width: 500, height: 70 }}
-															>
-
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div
-											className="swiper-slide"
-											style={{ width: "240.75px", marginRight: 30 }}
-										>
-											<div className="card card-box bg-secondary bg-pink">
-												<div className="card-header border-0 pb-0">
-													<div className="chart-num">
-														<p>
-															<i className="fa-solid fa-sort-down me-2" />
-															4%(30 days)
-														</p>
-														<h2 className="font-w600 mb-0">$68,123</h2>
-													</div>
-													<div className="dlab-swiper-circle">
-
-													</div>
-												</div>
-												<div className="card-body p-0">
-													<div id="widgetChart1" className="chart-primary">
-														<div
-															options="[object Object]"
-															series="[object Object]"
-															type="line"
-															height={70}
-															width={500}
-															style={{ minHeight: 70 }}
-														>
-															<div
-																id="apexcharts73sn7z2v"
-																className="apexcharts-canvas apexcharts73sn7z2v apexcharts-theme-light"
-																style={{ width: 500, height: 70 }}
-															>
-
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div
-											className="swiper-slide"
-											style={{ width: "240.75px", marginRight: 30 }}
-										>
-											<div className="card card-box bg-secondary bg-warning">
-												<div className="card-header border-0 pb-0">
-													<div className="chart-num">
-														<p>
-															<i className="fa-solid fa-sort-down me-2" />
-															4%(30 days)
-														</p>
-														<h2 className="font-w600 mb-0">$67,123</h2>
-													</div>
-													<div className="dlab-swiper-circle">
-
-													</div>
-												</div>
-												<div className="card-body p-0">
-													<div id="widgetChart1" className="chart-primary">
-														<div
-															options="[object Object]"
-															series="[object Object]"
-															type="line"
-															height={70}
-															width={500}
-															style={{ minHeight: 70 }}
-														>
-															<div
-																id="apexcharts9jbdml7d"
-																className="apexcharts-canvas apexcharts9jbdml7d apexcharts-theme-light"
-																style={{ width: 500, height: 70 }}
-															>
-
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
+										<div className="dlab-swiper-circle"></div>
+									</div>
+									<div className="card-body p-0">
+										<div id="widgetChart1" className="chart-primary"></div>
 									</div>
 								</div>
+							</SwiperSlide>
+							<SwiperSlide>
+								<div className="card card-box bg-secondary bg-pink">
+									<div className="card-header border-0 pb-0">
+										<div className="chart-num">
+											<p>
+												<i className="fa-solid fa-sort-down me-2" />
+												4%(30 days)
+											</p>
+											<h2 className="font-w600 mb-0">$68,123</h2>
+										</div>
+										<div className="dlab-swiper-circle"></div>
+									</div>
+									<div className="card-body p-0">
+										<div id="widgetChart1" className="chart-primary"></div>
+									</div>
+								</div>
+							</SwiperSlide>
+							{/* Repeat SwiperSlide for other cards */}
+						</Swiper>
+					
+
 							</div>
 							<div className="row">
 								<div className="col-xl-6">
